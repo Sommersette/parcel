@@ -10,7 +10,8 @@ describe(Parcel) do
   end
   describe('#shipping') do
     it('returns cost based on weight, size, speed, and distance') do
-      test_shipping = Parcel.new(volume, )
+      test_shipping = Parcel.new(2, 2, 2, 2, 2, 2)
+      expect(test_shipping.shipping()).to(eq(14))
     end
   end
 end

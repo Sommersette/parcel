@@ -9,10 +9,10 @@ class Parcel
   end
 
     define_method(:volume) do
-      @length * @height * @width
+      @volume = @length * @height * @width
   end
 
     define_method(:shipping) do
-    
+    self.volume() + @weight + @speed + @distance
   end
 end
