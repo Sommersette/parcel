@@ -1,0 +1,32 @@
+<h1>YOU Parcel Service</h1>
+<form action="cost" method="post">
+  <div class="form-group">
+    <div class="">
+      <label>Length</label>
+      <input type="number" name="volume" value="">
+      <label>Height</label>
+      <input type="number" name="volume" value="">
+      <label>Width</label>
+      <input type="number" name="volume" value="">
+    </div>
+    <div class="">
+      <label for="">Weight</label>
+      <input type="number" name="weight" value="">
+    </div>
+    <div class="">
+      <label for="">Speed</label>
+      <input type="radio" name="name" value="">
+      <input type="radio" name="name" value="">
+      <input type="radio" name="name" value="">
+      <label for="">Distance</label>
+      <select name="distance">
+        <option></option>
+        <option value="1">West Coast</option>
+        <option value="2">Mid-West</option>
+        <option value="2">East Coast</option>
+      </select>
+    </div>
+  </div>
+  <button type="submit" name="button">Submit</button>
+</form>
+  <h5>   <%= @result %> </h5>
